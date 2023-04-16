@@ -1,0 +1,355 @@
+/*font-family: 'Montserrat', sans-serif;
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FAFAFA;
+  font-size: 16px;  
+}
+
+body{
+  margin: 60px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: medium;
+  font-size: 28px;
+  padding: 0 ;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  color:#000000;
+}
+
+h1::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60px;
+  background-color:#407BFF;
+  margin: 10px auto;
+ }
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+
+p {
+  font-weight: light;
+  text-align: center;
+  color:#8B8B8B;
+  line-height: 21px;
+  opacity: 1;
+  margin:0
+}
+
+.img_main{
+  display: block;
+  margin: auto;
+  width: 350px;
+  height: 290px;
+}
+
+.container_intro{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro_title{
+  display: block;
+  flex: 1;
+}
+
+.intro_text{
+  margin: 20px 0;
+}
+
+.container_intro_buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  flex-basis: 100%;  
+}
+
+.intro_button{
+  display: block;
+  background-color: #8B8B8B;
+  border-radius: 25px;
+  padding: 10px  30px;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.intro_button_adventure{
+  background-color: #407BFF;
+}
+
+
+
+.container_services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 45px;
+}
+
+.services_title{
+  margin: 15px 0;
+}
+
+.service_text{
+  margin: 0 0 30px 0;
+}
+
+.container_card{
+  display: flex;
+  flex-basis: 100%;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 6px #407BFF1F;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 15px 0;
+  background-color: white;
+}
+
+.image_icon_card{
+  display: block;
+  align-self: center;
+  height: 40px;
+  width: 45px;
+  margin: 20px;
+}
+
+.card_text{
+  display: block;
+  align-self: center;
+}
+
+.container_services_onsite{
+  margin-top: 30px;
+}
+
+@media (min-width: 640px) {
+
+  .img_main{
+    display: block;
+    margin: auto;
+    width: 400px;
+    
+  }
+
+  .container_main{
+    max-width: 745px;
+    justify-content: centers;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .container_intro_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+ }
+
+  .intro_button{
+    margin: 10px 15px 15px 15px;
+    
+  }
+  .container_services_detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .container_services_headingintro{
+    max-width: 745px;
+  }
+  .services_title{
+    display: block;
+    flex:1 1 100%;
+  }
+  
+  .service_text{
+    display: block;
+    flex: 1 1 100%;
+    
+  }
+
+  .container_services_cards{
+    display: flex;
+  }
+
+  .container_card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex:1 1 31% ;
+    margin-right: 20px;
+    padding: 15px;
+    max-width: 235px;
+    
+    
+  }
+  
+  .plane_card, .rv_card{
+    margin-right: 0px;
+  }
+     
+}
+
+
+@media (min-width: 1100px) {
+
+  html {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  h1{
+    text-align: left;
+  }
+
+  h1::after{
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  h2{
+    text-align: left;
+  }
+  .container_main{
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+  }
+  
+
+  .img_box{
+    display: block;
+    order: 2;
+    flex: 0 0 auto;
+    width: 490px;
+    margin-left: 60px;
+    }
+
+  .container_intro{
+    display: flex;
+    order: 1;
+    flex: 0 0 auto;
+    width:490px;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    align-self: flex-start;
+    
+  }
+
+  .img_main{
+    display: block;
+    width: 425px;
+    align-self: center;
+    
+  }
+
+  .intro_text{
+    text-align: left;
+  }
+
+  .container_services{
+    order: 3;
+  }
+
+  .service_text{
+    text-align: left;
+  }
+
+  .container_intro_buttons{
+    justify-content: flex-start;
+   }
+
+  .intro_button{
+    align-self: flex-start;
+  }
+
+  .intro_button_adventure{
+    margin-left: 0;
+  }
+
+  .container_services{
+  margin-top: 80px ;  
+  }
+
+  .container_services_general{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+    .container_services_headingintro_general{
+      order: 2;
+      width: 430px;
+      margin-left: 30px;
+    }
+  
+    .container_services_cards_general{
+      order: 1;
+      width: 550px;
+      margin-right: 30px;
+    }
+
+    .container_services_onsite{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-basis: 100;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+    }
+  
+      .container_services_headingintro_onsite{
+        order: 1;
+        width: 430px;
+        margin-right: 30px;
+      }
+    
+      .container_services_cards_onsite{
+        order: 2;
+        width: 550px;
+        margin-left: 30px;
+      }
+
+    .container_card{
+      margin-top:0 ;
+      margin-bottom: 0;
+    }
+  
+}
